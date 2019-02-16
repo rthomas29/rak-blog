@@ -42,20 +42,18 @@ export const Sidebar = (props) => (
               name
               photo
               bio
-              contacts {       
-                twitter
-                telegram
-                github
+              contacts {
                 email
-                rss
-                vkontakte
+                github
+                linkedin
+                twitter
               }
             }
           }
         }
       }
     `}
-    render={(data) => <PureSidebar {...props} data={data}/>}
+    render={(data) => <PureSidebar {...props} data={data} />}
   />
 );
 

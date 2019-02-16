@@ -2,12 +2,12 @@
 
 module.exports = {
   url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'JavaScript and Other Stuff',
+  subtitle: 'Me rambling about JS and other web dev things.',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'raksite',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-109215580-2',
   menu: [
     {
       label: 'Articles',
@@ -17,22 +17,20 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+    // {
+    //   label: 'Contact me',
+    //   path: '/pages/contacts'
+    // }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Rakeem Thomas',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: "Rakeem is a Web Developer currently focused on JavaScript, React, Node and GraphQL. He's always down to learn new things and meet new people! Feel free to reach out",
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'rakeemjthomas@gmail.com',
+      github: 'rthomas29',
+      linkedin: 'rakeemthomas',
+      twitter: 'dev_rakeem',
     }
   }
 };

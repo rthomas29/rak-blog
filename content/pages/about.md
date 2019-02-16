@@ -3,10 +3,9 @@ title: "About me"
 template: "page"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+![Hello](https://media.giphy.com/media/pjd4u7XpK2c12I0nfp/giphy.gif)
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+## Hey, I'm Rakeem :wave:
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+I'm always down for productive conversation and positive energy. I enjoy solving problems and implementing solutions on the web. I'm a web developer that is currently focused on JavaScript (React, Node, Express, MongoDB, SQL, GraphQL) and tools that exist in the modern JavaScript ecosystem. I'll be using this blog to share knowledge that I gain through studying and breaking things. I'm always looking for opportunities to connect and grow, so feel free to reach out on [LinkedIn](https://linkedin.com/in/rakeemthomas) or [Twitter](https://twitter.com/rthom4s). Let's work!

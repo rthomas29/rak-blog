@@ -10,8 +10,9 @@
   @include margin-bottom(2);
 
   &__bio {
+    display: inline;
     &-twitter {
-      display: block;
+      display: inline;
       text-decoration: underline;
     }
   }

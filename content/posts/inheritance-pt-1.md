@@ -1,5 +1,5 @@
 ---
-title: Perfecting the Art of Perfection
+title: "OOJS: Inheritance in JavaScript"
 date: "2017-12-06T23:46:37.121Z"
 template: "post"
 draft: false

@@ -8,7 +8,7 @@ category: "OOJS"
 tags:
   - "OOP"
   - "JavaScript"
-description: "Let's take a brief look at prototypal inheritance with JavaScript."
+description: "Let's talk about classes."
 ---
 
 One of the biggest additions to the JavaScript spec via ES6 was the `class` keyword. Using classes allows engineers to replicate class syntax in OOP languages that utilize the classical inheritance model (Java, C#, etc.). However, `class` in JavaScript still utilizes **prototypal inheritance** under the hood and is simply syntactic sugar on top of that functionality. This post will compare the creation of objects using ES5 constructor functions and ES6 class keywords.
