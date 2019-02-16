@@ -1,8 +1,15 @@
 ---
-title: 'OOJS: Inheritance in JavaScript'
-date: 2017-12-06
+title: Perfecting the Art of Perfection
+date: "2017-12-06T23:46:37.121Z"
+template: "post"
+draft: false
+slug: "/posts/inheritance-pt-1/"
+category: "OOJS"
+tags:
+  - "OOP"
+  - "JavaScript"
+description: "Let's take a brief look at prototypal inheritance with JavaScript."
 ---
-
 Although you can build software using an object-oriented style with JavaScript, there are some core differences between the inheritance model in JavaScript versus OOP-specific languages, e.g., Java, C#. To share functionality between objects, traditional OOP languages utilize _classical inheritance_ as their inheritance model, while JavaScript uses _prototype-based inheritance_.
 
 Classical Inheritance revolves around using classes as a blueprint to create new objects. In other words, classes are a template that describe what values and functionality is available within objects that are instantiated from a class. To create an object in a classical OOP language, you _must_ instantiate a class! For example, if you have a Car class and wanted to create a new object that encapsulates information about your car, you would need to instantiate the Car class.

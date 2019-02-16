@@ -1,8 +1,14 @@
 ---
 title: 'React: Updating Parent State from Child Components'
-date: 2018-01-01
+date: "2018-01-01T23:46:37.121Z"
+template: "post"
+draft: false
+slug: "/posts/updating-state/"
+category: "React"
+tags:
+  - "React"
+description: "Basic state management with React."
 ---
-
 I've been having a lot of fun learning React and how it fits into front-end development in 2018. With tools like create-react-app, you can have an app up and running in no time at all. While there's a lot to learn within the React ecosystem, this post will focus on updating the state of a Parent component from a Child component.
 
 ### What is State?
