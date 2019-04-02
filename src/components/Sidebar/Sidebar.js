@@ -16,7 +16,7 @@ export const PureSidebar = ({ data, isIndex }) => {
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
-        <Author author={author} isIndex={isIndex} />
+        <Author showSidebarBio author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
@@ -42,6 +42,7 @@ export const Sidebar = (props) => (
               name
               photo
               bio
+              sidebarBio
               contacts {
                 email
                 github

@@ -26,6 +26,7 @@ module.exports = {
     name: 'Rakeem Thomas',
     photo: '/photo.jpg',
     bio: "Rakeem is a Web Developer currently focused on JavaScript, React, Node and GraphQL. He's always down to learn new things and meet new people! Feel free to reach out",
+    sidebarBio: "Rakeem is a Web Developer currently focused on JavaScript, React, Node and GraphQL. Reach out and say hello! 🤗",
     contacts: {
       email: 'rakeemjthomas@gmail.com',
       github: 'rthomas29',
