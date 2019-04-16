@@ -8,7 +8,7 @@ const Author = ({ author, isIndex, showSidebarBio }) => {
     <div className={styles['author']}>
       <Link to="/">
         <img
-          src={withPrefix(author.photo)}
+          src="https://res.cloudinary.com/img-cdn01/image/upload/v1555264829/photo.jpg"
           className={styles['author__photo']}
           width="75"
           height="75"

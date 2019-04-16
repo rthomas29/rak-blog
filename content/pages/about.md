@@ -3,8 +3,9 @@ title: "About me"
 template: "page"
 ---
 
-
-![Hello](https://media.giphy.com/media/pjd4u7XpK2c12I0nfp/giphy.gif)
+<video width="350" height="260" autoplay loop>
+  <source src="https://res.cloudinary.com/img-cdn01/image/upload/v1555372918/hello.mp4" type="video/mp4">
+</video>
 
 ## Hey, I'm Rakeem :wave:🏾
 
