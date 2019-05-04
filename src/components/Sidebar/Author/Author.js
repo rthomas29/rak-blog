@@ -1,14 +1,17 @@
-import React from 'react';
-import { withPrefix, Link } from 'gatsby';
-import styles from './Author.module.scss';
+import React from 'react'
+import { withPrefix, Link } from 'gatsby'
+import Icon from '../../Icon'
+import { getIcon } from '../../../utils'
+import styles from './Author.module.scss'
 
 const Author = ({ author, isIndex, showSidebarBio }) => {
   const bio = showSidebarBio ? author.sidebarBio : author.bio
+  const techLogos = author.tech.map(name => <Icon icon={getIcon(name)} name={name} social={false} />);
   return (
     <div className={styles['author']}>
       <Link to="/">
         <img
-          src="https://res.cloudinary.com/img-cdn01/image/upload/v1555264829/photo.jpg"
+          src="https://res.cloudinary.com/img-cdn01/image/upload/c_thumb,w_100/v1555264829/photo.jpg"
           className={styles['author__photo']}
           width="75"
           height="75"
@@ -25,9 +28,12 @@ const Author = ({ author, isIndex, showSidebarBio }) => {
             <Link className={styles['author__title-link']} to="/">{author.name}</Link>
           </h2>
         )}
-      <p className={styles['author__subtitle']}>{bio}</p>
+      <div>
+        <p className={styles['author__subtitle']}>{bio}</p>
+        <span>{techLogos}</span>
+      </div>
     </div>
   )
 }
 
-export default Author;
+export default Author

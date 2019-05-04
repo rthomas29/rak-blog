@@ -3,8 +3,6 @@
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -16,4 +14,11 @@
   margin-left: .2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.tech {
+  @extend .icon;
+  &:first-child {
+    margin-left: 0;
+  }
 }

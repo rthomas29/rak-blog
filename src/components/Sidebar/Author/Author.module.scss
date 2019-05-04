@@ -6,7 +6,8 @@
     display: inline-block;
     margin-bottom: 0;
     border-radius: 50%;
-    background-clip: padding-box
+    background-clip: padding-box;
+    max-width: 100%;
   }
 
   &__title {
@@ -30,7 +31,8 @@
   &__subtitle {
     color: $color-base;
     @include line-height(1);
-    @include margin-bottom(1)
+    @include margin-top(0.3);
+    @include margin-bottom(0.3)
   }
 
 }

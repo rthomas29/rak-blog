@@ -40,8 +40,8 @@ export const Sidebar = (props) => (
             }
             author {
               name
-              photo
               bio
+              tech
               sidebarBio
               contacts {
                 email
