@@ -6,7 +6,7 @@ import styles from './Author.module.scss'
 
 const Author = ({ author, isIndex, showSidebarBio }) => {
   const bio = showSidebarBio ? author.sidebarBio : author.bio
-  const techLogos = author.tech.map(name => <Icon icon={getIcon(name)} name={name} social={false} />);
+  const techLogos = author.tech.map(name => <Icon key={name} icon={getIcon(name)} name={name} social={false} />);
   return (
     <div className={styles['author']}>
       <Link to="/">

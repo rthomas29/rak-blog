@@ -9,7 +9,7 @@ const Icon = ({ icon, social = true, name }) => {
     </svg >
   ) : (
       <svg className={styles['tech']} viewBox={icon.viewBox}>
-        <g fill-rule={fillRule}>
+        <g fillRule={fillRule}>
           {name === 'js' ? (
             <g>
               <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
