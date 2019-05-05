@@ -15,7 +15,7 @@ One of the biggest additions to the JavaScript spec via ES6 was the `class` keyw
 
 ### First thing first
 
-I want to reiterate that classes in JavaScript is **not** the same as classes in other OOP languages. In the background, objects are still utilizing the prototype chain to look up and use functionality that doesn't exist within it's context. This is important to remember. `Class` is only syntactic sugar on top of prototypal inheritance. Now let's get into our comparison.
+I want to reiterate that classes in JavaScript are **not** the same as classes in other OOP languages. In the background, objects are still utilizing the prototype chain to look up and use functionality that doesn't exist within it's context. This is important to remember. `Class` is only syntactic sugar on top of prototypal inheritance. Now let's get into our comparison.
 
 ### Constructor Function Declaration vs. Class Declaration
 
