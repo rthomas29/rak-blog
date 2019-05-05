@@ -183,6 +183,17 @@ module.exports = {
           camelCase: false,
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Source Sans Pro`,
+            variants: [`300`, `400`]
+          }
+        ],
+      },
     }
   ]
 };

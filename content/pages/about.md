@@ -1,14 +1,13 @@
 ---
-title: "About me"
+title: "whoami"
 template: "page"
 ---
 
-<video width="350" height="260" autoplay loop>
-  <source src="https://res.cloudinary.com/img-cdn01/image/upload/v1555372918/hello.mp4" type="video/mp4">
-</video>
+* React and GraphQL enthusiast 🤓
+* Not afraid to wrestle with Babel and Webpack 🤼‍
+* Gets excited about finding ways to increase site performance 📈
+* Fiercely believes that hard work + passion > talent 🏃🏾‍
 
-## Hey, I'm Rakeem :wave:🏾
+### I'm also looking for my next opportunity :exclamation:
 
-I'm always down for productive conversation and positive energy. I enjoy solving problems and implementing solutions on the web. I'm a web developer that is currently focused on JavaScript (React, Node, Express, MongoDB, SQL, GraphQL) and tools that exist in the modern JavaScript ecosystem. I'll be using this blog to share knowledge that I gain through studying and breaking things.
-
-I'm currently seeking new job opportunities and I'd love to hear from you! Feel free to connect with me on [LinkedIn](https://linkedin.com/in/rakeemthomas), or DM me on [Twitter](https://twitter.com/rthom4s). Looking forward to speaking with you! 😀
+If your team is looking for a passionate and innovative engineer, hit me up! I'm searching for teams that foster growth and **trust** their teammates to learn fast and grow fast. If that sounds like your team, I'd love to chat! Feel free to shoot me a message on [LinkedIn](https://linkedin.com/in/rakeemthomas), or DM me on [Twitter](https://twitter.com/rthom4s). Looking forward to speaking with you!

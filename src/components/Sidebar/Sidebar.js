@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Author from './Author';
 import Contacts from './Contacts';
-import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 
@@ -19,7 +18,6 @@ export const PureSidebar = ({ data, isIndex }) => {
         <Author showSidebarBio author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
       </div>
     </div>
   );
@@ -33,7 +31,6 @@ export const Sidebar = (props) => (
           siteMetadata {
             title
             subtitle
-            copyright
             menu {
               label
               path
