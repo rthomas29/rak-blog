@@ -28,15 +28,21 @@ const fetchUser = async function () {
   return user
 }
 ```
-In the above code snippet, when `fetchUser` is called, thread execution will pause and `await` the data that is returned from `pretendThisReturnsAResolvedPromise`. The data will be the result of calling `Promise.resolve()` or `Promise.reject()` from a Promise object.
+In the above code snippet, when `fetchUser` is called, thread execution will pause and `await` the data that is returned from `pretendThisReturnsAResolvedPromise`. The data will be the result of either `Promise.resolve()` or `Promise.reject()` being invoked from a Promise object.
 
 ## Ok, so what's the tip?
 
-When working with modern JavaScript, I've noticed that it's easy to slap `async/await` on every asynchronous function without analyzing the use case. When you declare a function `async`, it'll still handle its asynchronous behavior via the [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ), but it returns an implicit `Promise` object, which may create unnecessary overhead, especially if you already have a Promise being returned from your function. Here's an example I ran into when working with Firebase Auth:
+When working with modern JavaScript, I've noticed that it's common to slap `async/await` on every asynchronous function without analyzing the use case. When you declare a function `async`, it'll still handle its asynchronous behavior via the [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ), but it returns an implicit `Promise` object, which may create unnecessary overhead, especially if you already have a Promise being returned from your function. Here's an example I ran into when working with Firebase Authentication:
 
 ```javascript
+import app from 'firebase/app'
+import 'firebase/auth'
+
 class Firebase {
-  // constructor and things to initialize Firebase instance...
+  constructor(firebaseConfig) {
+    this.instance = app.initializeApp(firebaseConfig)
+    this.auth = app.auth()
+  }
 
   createUserWithEmailAndPassword = (email, password) => this.auth.createUserWithEmailAndPassword(email, password)
 
@@ -48,15 +54,19 @@ class Firebase {
 }
 ```
 
-I created a Firebase class to handle user authentication. The methods themselves aren't important, but it is important to know that these methods **already return a promise**, so there's no need to make these methods `async`! I've seen instances where developers, myself included, will do something like this:
+I created a Firebase class that encapsulates user authentication for a side project I'm working on. For this example, the methods themselves aren't important, but it is important to know that the authentication methods from the Firebase SDK **already return a promise**, so there's no need to make my Firebase class methods `async`! I've seen instances where developers, myself included, will do something like this:
 
 ```javascript
  class Firebase {
   // same class from above...
 
     signInWithEmailAndPassword = async (email, password) => {
-      const user = await this.auth.signInWithEmailAndPassword(email, password)
-      return user
+      try {
+        const user = await this.auth.signInWithEmailAndPassword(email, password)
+        return user
+      } catch(error) {
+        // some arbitrary error handling
+      }
     }
  }
 ```
@@ -66,6 +76,7 @@ There are a couple of things wrong with this, in my opinion.
 1. The caller won't have full flexibility when handling errors.
 2. Unnecessary implicit Promise!
 
-If we `await` for `this.auth.signInWithEmailAndPassword(email, password)` here, we remove some flexibility for the caller to handle any potential errors in the way that they decide to. What I mean is that even if we decide to handle errors within the `this.auth.signInWithEmailAndPassword(email, password)` itself, any consumers of the Firebase class will have to adhere to that specific type of error handling. If we instead return `this.auth.signInWithEmailAndPassword(email, password)` from the Firebase class method, we keep the function pure and give the caller full flexibility when it relates to how they want to handle errors.
+If we wrote our Firebase class methods like this, any consumers of the Firebase class methods will have to adhere to this specific type of error handling. If we instead return `this.auth.signInWithEmailAndPassword(email, password)`, which itself returns a `Promise`, we keep our class method pure and give the caller full flexibility regarding how they want to handle potential errors.
 
-This was a thought that has been rolling around in my head for the past couple days, so I decided to write about it. If I missed something, or worded something poorly, please feel free to comment and let me know 😊
+
+This was a thought that has been rolling around in my head for the past couple days so I decided to write about it. If I missed something, or worded something poorly, please feel free to comment and let me know 😊
