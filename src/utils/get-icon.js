@@ -26,13 +26,16 @@ const getIcon = (name) => {
       icon = ICONS.LINKEDIN;
       break;
     case 'react':
-      icon = ICONS.REACT
+      icon = ICONS.REACT;
       break;
     case 'graphql':
-      icon = ICONS.GRAPHQL
+      icon = ICONS.GRAPHQL;
       break;
     case 'js':
-      icon = ICONS.JS
+      icon = ICONS.JS;
+      break;
+    case 'nodejs':
+      icon = ICONS.NODEJS;
       break;
     default:
       icon = {};
