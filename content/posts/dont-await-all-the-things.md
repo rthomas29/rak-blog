@@ -15,7 +15,7 @@ description: "Quick tip on using async/await"
 
 I want to make this quick, so let's dive right in!
 
-If you've been writing JavaScript for any period of time, you've probably run into `Promise` and `async/await`. If you're unfamiliar with promises, I would suggest heading over to [MDN]("https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise") for an in-depth explanation.
+If you've been writing JavaScript for any period of time, you've probably run into `Promise` and `async/await`. If you're unfamiliar with promises, I would suggest heading over to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for an in-depth explanation.
 
 ## What does async/await do?
 
@@ -32,7 +32,7 @@ In the above code snippet, when `fetchUser` is called, thread execution will pau
 
 ## Ok, so what's the tip?
 
-When working with modern JavaScript, I've noticed that it's easy to slap `async/await` on every asynchronous function without analyzing the use case. When you declare a function `async`, it'll still handle its asynchronous behavior via the [event loop]("https://www.youtube.com/watch?v=8aGhZQkoFbQ"), but it returns an implicit `Promise` object, which may create unnecessary overhead, especially if you already have a Promise being returned from your function. Here's an example I ran into when working with Firebase Auth:
+When working with modern JavaScript, I've noticed that it's easy to slap `async/await` on every asynchronous function without analyzing the use case. When you declare a function `async`, it'll still handle its asynchronous behavior via the [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ), but it returns an implicit `Promise` object, which may create unnecessary overhead, especially if you already have a Promise being returned from your function. Here's an example I ran into when working with Firebase Auth:
 
 ```javascript
 class Firebase {
