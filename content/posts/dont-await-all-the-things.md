@@ -54,7 +54,7 @@ class Firebase {
 }
 ```
 
-I created a Firebase class that encapsulates user authentication for a side project I'm working on. For this example, the methods themselves aren't important, but it is important to know that the authentication methods from the Firebase SDK **already return a promise**, so there's no need to make my Firebase class methods `async`! I've seen instances where developers, myself included, will do something like this:
+I created a Firebase class that encapsulates user authentication for a side project I'm working on. For this example, the methods themselves aren't important, but it is important to know the authentication methods from the Firebase SDK **already return a promise**, so there's no need to make my Firebase class methods `async`! I've seen instances where developers, myself included, will do something like this:
 
 ```javascript
  class Firebase {
