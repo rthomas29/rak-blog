@@ -15,7 +15,7 @@ description: "Having weird side-effects when clicking a disabled button? The poi
 
 
 ## TL;DR
-### Use the `pointer-events` CSS rule to disable click/pointer events on specific DOM elements.
+### Use the `pointer-events` CSS rule to disable click/pointer events on specific DOM elements. [CodeSandbox](https://codesandbox.io/s/infallible-wind-l1frx)
 
 
 # Intro
