@@ -4,9 +4,9 @@ import Icon from '../../Icon';
 import styles from './Contacts.module.scss';
 
 const Contacts = ({ contacts }) => (
-  <div className={styles['contacts']}>
+  <div className={styles['contacts']} style={{ marginLeft: '-5px' }}>
     <ul className={styles['contacts__list']}>
-      {Object.keys(contacts).map((name) => (
+      {Object.keys(contacts).map(name => (
         <li className={styles['contacts__list-item']} key={name}>
           <a
             className={styles['contacts__list-item-link']}
