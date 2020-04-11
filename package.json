@@ -1,6 +1,7 @@
 {
   "version": "3.0.0",
-  "name": "Rakeem's blog",
+  "name": "rakeem-blog",
+  "description": "Just a place to put some thoughts",
   "main": "n/a",
   "scripts": {
     "develop": "npm run clean && gatsby develop",
