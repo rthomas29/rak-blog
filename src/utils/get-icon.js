@@ -37,6 +37,9 @@ const getIcon = (name) => {
     case 'nodejs':
       icon = ICONS.NODEJS;
       break;
+    case 'typescript':
+      icon = ICONS.TYPESCRIPT;
+      break;
     default:
       icon = {};
       break;
