@@ -7,12 +7,6 @@ module.exports = {
   disqusShortname: 'raksite',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-109215580-2',
-  menu: [
-    {
-      label: 'Articles',
-      path: '/',
-    },
-  ],
   author: {
     name: 'Rakeem Thomas',
     bio:
