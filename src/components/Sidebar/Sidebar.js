@@ -25,10 +25,6 @@ export const Sidebar = props => (
           siteMetadata {
             title
             subtitle
-            menu {
-              label
-              path
-            }
             author {
               name
               bio
