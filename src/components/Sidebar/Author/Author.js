@@ -1,12 +1,14 @@
-import React from 'react'
-import { withPrefix, Link } from 'gatsby'
-import Icon from '../../Icon'
-import { getIcon } from '../../../utils'
-import styles from './Author.module.scss'
+import React from 'react';
+import { withPrefix, Link } from 'gatsby';
+import Icon from '../../Icon';
+import { getIcon } from '../../../utils';
+import styles from './Author.module.scss';
 
 const Author = ({ author, isIndex, showSidebarBio }) => {
-  const bio = showSidebarBio ? author.sidebarBio : author.bio
-  const techLogos = author.tech.map(name => <Icon key={name} icon={getIcon(name)} name={name} social={false} />);
+  const bio = showSidebarBio ? author.sidebarBio : author.bio;
+  const techLogos = author.tech.map(name => (
+    <Icon key={name} icon={getIcon(name)} name={name} social={false} />
+  ));
   return (
     <div className={styles['author']}>
       <Link to="/">
@@ -21,19 +23,23 @@ const Author = ({ author, isIndex, showSidebarBio }) => {
 
       {isIndex ? (
         <h1 className={styles['author__title']}>
-          <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+          <Link className={styles['author__title-link']} to="/">
+            {author.name}
+          </Link>
         </h1>
       ) : (
-          <h2 className={styles['author__title']}>
-            <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-          </h2>
-        )}
+        <h2 className={styles['author__title']}>
+          <Link className={styles['author__title-link']} to="/">
+            {author.name}
+          </Link>
+        </h2>
+      )}
       <div>
         <p className={styles['author__subtitle']}>{bio}</p>
         <span>{techLogos}</span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Author
+export default Author;

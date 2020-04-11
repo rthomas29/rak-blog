@@ -12,10 +12,6 @@ module.exports = {
       label: 'Articles',
       path: '/',
     },
-    {
-      label: 'About',
-      path: '/pages/about',
-    },
   ],
   author: {
     name: 'Rakeem Thomas',
