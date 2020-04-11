@@ -10,24 +10,24 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
     {
       label: 'About',
-      path: '/pages/about'
-    }
+      path: '/pages/about',
+    },
   ],
   author: {
     name: 'Rakeem Thomas',
     bio:
-      'Rakeem is a front end engineer who likes to build web apps with React, NodeJS, and GraphQL. He\'s always down to learn new things and meet new people! Feel free to reach out',
-    sidebarBio: 'Front End Engineer',
-    tech: ['js', 'react', 'nodejs', 'graphql'],
+      "Rakeem is a Software Engineer who likes to build web apps with React, NodeJS, and GraphQL. He's always down to learn new things and meet new people! Feel free to reach out",
+    sidebarBio: 'Software Engineer',
+    tech: ['js', 'typescript', 'react', 'nodejs', 'graphql'],
     contacts: {
       email: 'rakeemjthomas@gmail.com',
       github: 'rthomas29',
       linkedin: 'rakeemthomas',
-      twitter: 'dev_rakeem'
-    }
-  }
+      twitter: 'dev_rakeem',
+    },
+  },
 };
