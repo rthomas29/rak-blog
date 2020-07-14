@@ -2,6 +2,7 @@
 
 module.exports = {
   url: 'https://rakeem.me',
+  siteUrl: 'https://rakeem.me',
   title: 'JavaScript and Other Stuff',
   subtitle: 'Me rambling about JS and other web dev things.',
   disqusShortname: 'raksite',
