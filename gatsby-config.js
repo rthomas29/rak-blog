@@ -6,7 +6,7 @@ const postCssPlugins = require('./postcss-config.js');
 module.exports = {
   siteMetadata: {
     url: siteConfig.url,
-    siteUrl: siteConfig.url,
+    siteUrl: `https://rakeem.me`,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
@@ -160,7 +160,7 @@ module.exports = {
         output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => ({
-            url: site.siteMetadata.url + edge.node.path,
+            url: `https://rakeem.me/` + edge.node.path,
             changefreq: 'daily',
             priority: 0.7,
           })),
